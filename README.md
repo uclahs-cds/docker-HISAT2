@@ -1,25 +1,19 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on the bl-base image.
+# docker-HISAT2
+Dockerfile for HISAT2, which "is a fast and sensitive alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against the general human population (as well as against a single reference genome)."
 
-The bl-base image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/bl-base
+The HISAT2 image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/hisat2
 
 # Documentation
-Docker introduction [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Docker+Introduction)
-
-Dockerfile Best Practices [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Dockerfile+Best+Practices)
-
-Docker image versioning standard [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Docker+image+versioning+standardization)
-
+HISAT2 manual is [here](http://daehwankimlab.github.io/hisat2/manual/)
 
 # Version
 | Tool | Version |
 |------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
-
+| HISAT2 | 2.2.1 |
 
 ---
 
 ## References
 
-1. Tool specific references can be listed here
+1. https://www.nature.com/articles/s41587-019-0201-4
+2. http://daehwankimlab.github.io/hisat2/

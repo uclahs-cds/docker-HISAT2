@@ -11,6 +11,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-## [1.0.0] - 2021-04-29
+## [2.2.1] - 2021-05-05
 ### Added
 - Migrated HISAT2 v2.2.1 Dockerfile from pipeline-align-RNA repository.

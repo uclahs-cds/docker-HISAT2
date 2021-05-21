@@ -3,6 +3,9 @@ Dockerfile for HISAT2, which "is a fast and sensitive alignment program for mapp
 
 The HISAT2 image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/hisat2
 
+A separate version was created for the align-DNA pipeline that includes SAMtools
+The HISAT2_SAMtools-1.11 image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/hisat2_samtools-1.11
+
 # Documentation
 HISAT2 manual is [here](http://daehwankimlab.github.io/hisat2/manual/)
 

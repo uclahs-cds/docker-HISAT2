@@ -10,6 +10,13 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [Unreleased]
 
 ---
+## [2.2.1] - 2021-05-21
+### Added
+- Added align-DNA/Dockerfile which includes SAMtools-1.1.
+### Updated
+- Added the removal of the hisat-2.2.1 folder in the Dockerfile to reduce the size of the container.
+
+---
 
 ## [2.2.1] - 2021-05-05
 ### Added

@@ -13,6 +13,8 @@ RUN wget https://cloud.biohpc.swmed.edu/index.php/s/oTtGWbWjaxsQ2Ho/download && 
     unzip download && \
     rm download && \
     cd hisat2-2.2.1 && \
-    cp -t /usr/local/bin hisat2 hisat2-align-s hisat2-align-l hisat2-build hisat2-build-s hisat2-build-l hisat2-inspect hisat2-inspect-s hisat2-inspect-l
+    cp -t /usr/local/bin hisat2 hisat2-align-s hisat2-align-l hisat2-build hisat2-build-s hisat2-build-l hisat2-inspect hisat2-inspect-s hisat2-inspect-l && \
+    cd .. && \
+    rm -R hisat2-2.2.1
 
 LABEL maintainer="Julie Livingstone <jlivingstone@mednet.ucla.edu>"

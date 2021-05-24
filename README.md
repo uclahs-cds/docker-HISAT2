@@ -1,7 +1,10 @@
 # docker-HISAT2
 Dockerfile for HISAT2, which "is a fast and sensitive alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against the general human population (as well as against a single reference genome)."
 
-The HISAT2 image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/hisat2
+SAMtools is also installed for use in the align-RNA and align-DNA pipelines.
+This is because many aligners (e.g. BWA-MEM2 and HISAT2) only support outputting the uncompressed SAM, which causes a burden on the hard disk IO and limits the performace.
+
+The HISAT2 image with SAMtools is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/hisat2_samtools-1.12
 
 # Documentation
 HISAT2 manual is [here](http://daehwankimlab.github.io/hisat2/manual/)

@@ -1,11 +1,12 @@
 ---
 Category: 'docker'
 Description: 'Docker repository for the HISAT2 algorithm'
-Maintainers: ['JLivingstone@mednet.ucla.edu']
-Contributors: ['Julie Livingstone']
+Maintainers: ['BNeilsen@mednet.ucla.edu']
+Contributors: ['Julie Livingstone', 'Beth Neilsen']
 Languages: ['Docker', 'bash']
-Tools: ['HISAT2', 'SAMtools v1.12']
+Tools: ['HISAT2', 'SAMtools v1.17']
 Version: ['2.2.1']
 Purpose of tool: 'Algorithm for aligning RNA-Seq data'
 Dependencies: ['Docker']
 References: 'Kim et al, Nature Biotechnology 37 907-915 (2019)'
+image_name: 'hisat2'

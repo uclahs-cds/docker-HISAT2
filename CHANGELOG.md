@@ -7,7 +7,13 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-## [Unreleased]
+## [Unreleased] - 2023-06-20
+### Changed
+- Updated SAMTools to v1.17
+- Updated Dockerfile to meet new lab standards
+
+### Added
+- Added autobuild workflow action
 
 ---
 ## [2.2.1] - 2021-05-22

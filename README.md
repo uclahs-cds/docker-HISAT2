@@ -4,7 +4,7 @@ Dockerfile for HISAT2, which "is a fast and sensitive alignment program for mapp
 SAMtools is also installed for use in the align-RNA and align-DNA pipelines.
 This is because many aligners (e.g. BWA-MEM2 and HISAT2) only support outputting the uncompressed SAM, which causes a burden on the hard disk IO and limits the performace.
 
-The HISAT2 image with SAMtools is located in the Boutros Lab Docker Hub repo: https://github.com/uclahs-cds/docker-HISAT2
+The HISAT2 image with SAMtools is located in UCLAHS-CDS GitHub Packages: https://github.com/orgs/uclahs-cds/packages/container/package/hisat2.
 
 # Documentation
 HISAT2 manual is [here](http://daehwankimlab.github.io/hisat2/manual/)

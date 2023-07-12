@@ -7,8 +7,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-## [Unreleased] - 2023-06-20
+## [Unreleased]
+
+## [2.2.1_samtools-1.17] - 2023-07-12
 ### Changed
+- Updated miniforge to v23.1.0-3
 - Updated SAMTools to v1.17
 - Updated Dockerfile to meet new lab standards
 

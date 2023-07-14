@@ -9,6 +9,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.2.1_samtools-1.17] - 2023-07-12
+### Changed
+- Updated miniforge to v23.1.0-3
+- Updated SAMTools to v1.17
+- Updated Dockerfile to meet new lab standards
+
+### Added
+- Added autobuild workflow action
+
 ---
 ## [2.2.1] - 2021-05-22
 ### Added

@@ -1,12 +1,28 @@
-FROM blcdsdockerregistry/bl-base:1.0.0 AS builder
+ARG MINIFORGE_VERSION=23.1.0-3
 
-RUN conda create -qy -p /usr/local \
+FROM condaforge/mambaforge:${MINIFORGE_VERSION} AS builder
+
+# add channels in correct order to avoid missing libcrypto dependency
+# https://github.com/bioconda/bioconda-recipes/issues/12100
+ARG HISAT2_VERSION=2.2.1
+ARG SAMTOOLS_VERSION=1.17
+
+RUN mamba create -qy -p /usr/local \
+    -c defaults \
     -c bioconda \
     -c conda-forge \
-    samtools==1.12 \
-    hisat2==2.2.1
+    hisat2==${HISAT2_VERSION} \
+    samtools==${SAMTOOLS_VERSION}
 
 FROM ubuntu:20.04
 COPY --from=builder /usr/local /usr/local
 
-LABEL maintainer="Julie Livingstone <jlivingstone@mednet.ucla.edu>"
+# Add a new user/group called bldocker
+RUN groupadd -g 500001 bldocker && \
+    useradd -r -u 500001 -g bldocker bldocker
+
+# Change the default user to bldocker from root
+USER bldocker
+
+LABEL maintainer="Beth Neilsen <BNeilsen@mednet.ucla.edu>" \ 
+org.opencontainers.image.source=https://github.com/uclahs-cds/docker-HISAT2
